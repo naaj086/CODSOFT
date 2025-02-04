@@ -1,0 +1,13 @@
+Task To-Do List
+This is a simple and interactive Task To-Do List application that helps users manage their daily tasks efficiently. The application allows users to add, edit, mark as complete, and delete tasks with an intuitive user interface.
+
+Features
+Add Tasks: Easily add new tasks with a title and optional description.
+Mark as Complete: Toggle tasks between completed and pending status.
+Edit Tasks: Update task details anytime.
+Delete Tasks: Remove tasks that are no longer needed.
+Responsive Design: Works seamlessly across devices (mobile, tablet, desktop).
+Local Storage: Tasks are saved locally, ensuring persistence even after refreshing the browser.
+
+Technologies Used
+Frontend: HTML, CSS, JavaScript
