@@ -1,0 +1,13 @@
+Real-Time Digital Clock
+This is a straightforward and visually appealing Real-Time Digital Clock that displays the current time, updating every second. It's a lightweight project ideal for showcasing basic web development skills.
+
+Features
+Real-Time Updates: The clock displays the current time in hours, minutes, and seconds, updating every second.
+12/24-Hour Format: [Optional - mention if the feature is implemented.]
+Dynamic Styling: The design adapts to different screen sizes for a responsive experience.
+Customizable Design: Easily modify the font, colors, or layout to suit your needs.
+Technologies Used
+
+HTML: For structuring the clock interface.
+CSS: For styling and creating a visually appealing design.
+JavaScript: For dynamically updating the time in real-time.
