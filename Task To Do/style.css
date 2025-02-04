@@ -1,0 +1,302 @@
+ /* General reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Use 'Poppins' font throughout */
+  }
+  
+  /* Style for the body to center content and set background */
+  body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #444; /* Dark grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease-in-out; /* Smooth background transition */
+  }
+  
+  /* Highlight style for selected text */
+  ::selection {
+    color: #fff;
+    background: #3C87FF; /* Blue background for selected text */
+  }
+  
+  /* Wrapper for the entire content, with a white background and shadow */
+  .wrapper {
+    max-width: 500px;
+    padding: 18px 15px;
+    background: #fff; /* White background for the task container */
+    border-radius: 11px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in effect on load */
+  }
+  
+  /* Input field container for tasks */
+  .task-input {
+    position: relative;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for the search icon inside the input field */
+  .task-input img {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Task input field styling */
+  .task-input input {
+    width: calc(100% - 100px); /* Responsive width for input */
+    height: 52px;
+    padding: 0 20px 0 60px; /* Padding for the icon */
+    font-size: 18px;
+    border: 1px solid #999; /* Light grey border */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  /* Highlight input field when focused or active */
+  .task-input input:focus,
+  .task-input input.active {
+    border-color: #3C87FF; /* Blue border on focus */
+  }
+  
+  /* Placeholder text style for the input field */
+  .task-input input::placeholder {
+    color: #bfbfbf; /* Light grey placeholder text */
+  }
+  
+  /* Submit button styling */
+  .task-input button {
+    height: 52px;
+    width: 80px;
+    margin-left: 10px;
+    background: linear-gradient(135deg, #1798fb, #2D5CFE); /* Gradient blue */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease; /* Smooth hover/active effects */
+  }
+  
+  /* Hover effect for the submit button */
+  .task-input button:hover {
+    opacity: 0.9; /* Slightly less opaque */
+  }
+  
+  /* Click (active) effect for the submit button */
+  .task-input button:active {
+    transform: scale(0.95); /* Slight scaling on click */
+  }
+  
+  /* Controls container for filters and clear button */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc; /* Light grey border */
+  }
+  
+  /* Styling for filter buttons */
+  .filters span {
+    font-size: 17px;
+    color: #444; /* Dark grey text */
+    cursor: pointer;
+    margin-right: 15px;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  /* Active filter styling */
+  .filters span.active {
+    color: #3C87FF; /* Blue text for active filter */
+    font-weight: 600;
+  }
+  
+  /* Clear all tasks button styling */
+  .clear-btn {
+    background: linear-gradient(135deg, #1798fb, #2D5CFE); /* Gradient blue */
+    color: #fff;
+    border: none;
+    padding: 7px 13px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    opacity: 0.6; /* Initially dimmed */
+    transition: opacity 0.3s ease, transform 0.2s ease; /* Smooth hover/active effects */
+  }
+  
+  /* Highlight the clear button when active */
+  .clear-btn.active {
+    opacity: 1; /* Fully visible */
+  }
+  
+  /* Scaling effect when clear button is clicked */
+  .clear-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Task box container for task list */
+  .task-box {
+    margin-top: 20px;
+    padding: 0 20px 10px;
+    max-height: 300px; /* Set a maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  .task-input button,
+.clear-btn {
+  height: 55px;
+  width: 85px;
+  margin-left: 12px;
+  background: linear-gradient(135deg, #add412, #09a919);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.2s ease;
+}
+
+.task-input button:hover,
+.clear-btn:hover {
+  background: linear-gradient(135deg, #515acf, #FF8008);
+}
+
+.task-input button:active,
+.clear-btn:active {
+  transform: scale(0.95);
+}
+
+.filters span {
+  font-size: 17px;
+  color: #444;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.filters span:hover {
+  color: #FF5733;
+}
+
+.task-box li .task-menu li {
+  background: linear-gradient(135deg, #109d0d, #1e4267);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.2s ease;
+}
+
+.task-box li .task-menu li:hover {
+  background: linear-gradient(135deg, #FF512F, #DD2476);
+}
+
+.task-box li .task-menu li:active {
+  transform: scale(0.95);
+}
+ 
+  /* Custom scrollbar styling */
+  .task-box::-webkit-scrollbar {
+    width: 5px; /* Narrow scrollbar */
+  }
+  .task-box::-webkit-scrollbar-thumb {
+    background: #e6e6e6; /* Light grey scrollbar thumb */
+    border-radius: 25px;
+  }
+  
+  /* Individual task styling */
+  .task-box li.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* Divider for tasks */
+  }
+  
+  /* Remove border for the last task */
+  .task-box li.task:last-child {
+    border-bottom: none;
+  }
+  
+  /* Label styling for tasks */
+  .task-box label {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Checkbox styling for tasks */
+  .task-box label input {
+    margin-right: 10px;
+    accent-color: #3C87FF; /* Blue checkbox color */
+  }
+  
+  /* Task text styling */
+  .task-box label p {
+    font-size: 17px;
+    word-wrap: break-word; /* Ensure long text breaks properly */
+    transition: text-decoration 0.3s ease; /* Smooth strikethrough transition */
+  }
+  
+  /* Styling for completed tasks (checked) */
+  .task-box label p.checked {
+    text-decoration: line-through;
+    color: #aaa; /* Grey text for completed tasks */
+  }
+  
+  /* Settings container for task actions */
+  .settings {
+    position: relative;
+  }
+  
+  /* Dropdown menu for task actions */
+  .task-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 4px;
+    overflow: hidden;
+    transform: scaleY(0); /* Initially hidden */
+    transform-origin: top;
+    transition: transform 0.3s ease; /* Smooth dropdown animation */
+  }
+  
+  /* Show dropdown menu */
+  .task-menu.show {
+    transform: scaleY(1);
+  }
+  
+  /* Individual menu item styling */
+  .task-menu li {
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease; /* Smooth hover background change */
+  }
+  
+  /* Hover effect for menu items */
+  .task-menu li:hover {
+    background: #f5f5f5; /* Light grey on hover */
+  }
+  
+  /* Icon styling for menu items */
+  .task-menu li i {
+    margin-right: 8px;
+  }
+  /* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
