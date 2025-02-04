@@ -1,0 +1,16 @@
+Web Developer Portfolio
+Welcome to my Web Developer Portfolio project! This repository showcases my skills, projects, and expertise as a web developer. It's designed to provide an interactive and visually appealing representation of my work and professional background.
+
+Features
+Responsive Design: Works seamlessly on all devices (desktop, tablet, mobile).
+Interactive UI: Smooth animations and transitions for a modern experience.
+Project Showcase: Highlights key projects with descriptions, technologies used, and live demos.
+About Section: Provides a detailed overview of my skills, experience, and goals.
+Contact Form: Enables users or employers to reach out directly.
+Social Links: Easy access to my LinkedIn, GitHub, and other platforms.
+Technologies Used
+Frontend: HTML, CSS, JavaScript
+Frameworks: [e.g., React, Bootstrap, Tailwind CSS]
+Animations: [e.g., GSAP, Framer Motion]
+Backend (Optional): Node.js, Express.js
+Hosting: [e.g., GitHub Pages, Netlify, Vercel]
