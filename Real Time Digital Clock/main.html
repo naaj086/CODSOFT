@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital World Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Real Time Digital World Clock</h1>
+
+        <!-- Country Selection -->
+        <div class="country-selector">
+          <div class="selector">
+            <label for="country1">Country 1:</label>
+            <select id="country1">
+              <option value="0">Local</option>
+              <option value="-5">New York (UTC-5)</option>
+              <option value="1">London (UTC+1)</option>
+              <option value="5.5">India (UTC+5:30)</option>
+              <option value="9">Tokyo (UTC+9)</option>
+              <option value="-8">Los Angeles (UTC-8)</option>
+              <option value="2">Paris (UTC+2)</option>
+              <option value="3">Moscow (UTC+3)</option>
+              <option value="8">Beijing (UTC+8)</option>
+              <option value="10">Sydney (UTC+10)</option>
+              <option value="-3">Buenos Aires (UTC-3)</option>
+              <option value="13">Auckland (UTC+13)</option>
+              <option value="-4">Caracas (UTC-4)</option>
+              <option value="3.5">Tehran (UTC+3:30)</option>
+              <option value="7">Bangkok (UTC+7)</option>
+            </select>
+          </div>
+          <div class="selector">
+            <label for="country2">Country 2:</label>
+            <select id="country2">
+              <option value="0">Local</option>
+              <option value="-5">New York (UTC-5)</option>
+              <option value="1">London (UTC+1)</option>
+              <option value="5.5">India (UTC+5:30)</option>
+              <option value="9">Tokyo (UTC+9)</option>
+              <option value="-8">Los Angeles (UTC-8)</option>
+              <option value="2">Paris (UTC+2)</option>
+              <option value="3">Moscow (UTC+3)</option>
+              <option value="8">Beijing (UTC+8)</option>
+              <option value="10">Sydney (UTC+10)</option>
+              <option value="-3">Buenos Aires (UTC-3)</option>
+              <option value="13">Auckland (UTC+13)</option>
+              <option value="-4">Caracas (UTC-4)</option>
+              <option value="3.5">Tehran (UTC+3:30)</option>
+              <option value="7">Bangkok (UTC+7)</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Clock Display -->
+        <div class="clock-display">
+          <div class="clock" id="clock1">
+            <span class="time"></span>
+            <span class="date"></span>
+            <span class="day"></span>
+          </div>
+          <div class="clock" id="clock2">
+            <span class="time"></span>
+            <span class="date"></span>
+            <span class="day"></span>
+          </div>
+        </div>
+      </div>    
+</body>
+<script src="script.js"></script>
+</html>
